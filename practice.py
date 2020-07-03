@@ -1,5 +1,12 @@
-#문자열 자료형
-print("ㅋ"*9)
+#문자열 
+print("ㅋ"*9)#문자열 곱하기
+number=10
+a="Life si too short, You need Python %d" %number #문자열 포매팅 
+len(a)#문자열 길이 구하기 
+a[3],a[-2]#문자열 인덱싱
+a[0:4]#문자열 슬라이싱 a[시작번호 : 끝번호]
+"{0},{1}".format(10,20)#format함수를 사용한 포매팅
+
 # boolean 자료형 참 /거짓
 print(not True)
 print(not False)
