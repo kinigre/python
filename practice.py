@@ -2,10 +2,17 @@
 print("ㅋ"*9)#문자열 곱하기
 number=10
 a="Life si too short, You need Python %d" %number #문자열 포매팅 
-len(a)#문자열 길이 구하기 
-a[3],a[-2]#문자열 인덱싱
-a[0:4]#문자열 슬라이싱 a[시작번호 : 끝번호]
-"{0},{1}".format(10,20)#format함수를 사용한 포매팅
+print(len(a))#문자열 길이 구하기 
+print(a[3],a[-2])#문자열 인덱싱
+print(a[0:4])#문자열 슬라이싱 a[시작번호 : 끝번호]
+print("{0},{1}".format(10,20))#format함수를 사용한 포매팅
+print("{number}".format(number=10))
+print(f"{number}")
+print("{0:<10}".format("hi"))#왼쪽 정렬
+print("{0:>10}".format("hi"))#오른쪽 정렬
+print("{0:^10}".format("hi"))#가운데 정렬
+print("{0:=^10}".format("hi"))#공백체우기
+
 
 # boolean 자료형 참 /거짓
 print(not True)
@@ -29,7 +36,7 @@ subway.append(40)#리스트에 40을 추가
 subway.insert(1,15)#15를 10/20사이에 추가
 print(subway.pop())#위에 있는 값부터 하나씩 꺼낸다
 print(subway)
-print(subway.count)#같은 값이 몇번 있는지 카운트
+print(subway.count(10))#같은 값이 몇번 있는지 카운트
 #리스트 정렬
 num_list=[5,3,2,1,4]
 num_list.sort()#오름차순으로 정렬
